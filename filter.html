@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+
+    <script>
+        // #construtor
+        function novoAluno(nome,idade){
+            return {nome, idade}
+        }
+
+
+        function temMenos30(x){
+            return x.idade < 30
+
+        }
+
+        let alunos = [
+        novoAluno("adonis",23),
+        novoAluno("jose",45),
+        novoAluno("maria",30),
+        novoAluno("ricardo",32)
+        ]
+
+
+    
+        // function comparar(){
+        //     let listAluno = []
+            
+        //     for (let x of alunos){
+        //         if (x.idade > 25){
+        //             listAluno.push(x)
+        //         }
+        //     }
+        //     return listAluno
+        // }
+        
+        let a = alunos.filter(temMenos30)
+        console.log(a);
+
+
+    </script>
+    
+</body>
+</html>

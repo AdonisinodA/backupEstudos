@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armazenamento localStorage</title>
+</head>
+
+
+<script>
+    // localStorage.setItem(); grava o vlaor
+    // localStorage.getItem(); pega o valor na memoria
+    // localStorage.removeItem(); e remove o valor da memoria
+
+// localStorage.setItem("nome", "adonis");
+// o primeiro parâmetro dentro de localStorage.setItem será uma chave e o segundo o valor
+// let print = localStorage.getItem("nome");
+
+// console.log(print);
+
+// localStorage.removeItem("nome");
+
+
+
+function atualizar(element){
+    let valor = element.value;
+    // o elment.value vai pegar o valor desse parâmetro, que no caso é o que foi digitado 
+    // dentro do oniput
+    console.log(valor);
+    let h1 = document.getElementById("nome").innerHTML = valor
+
+    localStorage.setItem("chave",valor)
+
+    // o valor que esta no localstorage, foi recebido pela  a varivel let valor
+}
+// *** localStorage so recebe string de fato, entao se quiser passar um objeto por exemplo
+// é preciso passar usando as regras e depois usar o json.parse para transformar-lo em objeto
+
+onload = function(){
+    let nome = localStorage.getItem("chave");
+    let h1 = document.getElementById("nome");
+    h1.innerHTML = nome
+}
+
+
+</script>
+<body>
+
+
+    
+<!-- como pode ser usado o localStorage -->
+
+<h1 id="nome"></h1>
+
+
+<input type="text" oninput="atualizar(this)">
+
+
+
+
+
+
+</body>
+</html>

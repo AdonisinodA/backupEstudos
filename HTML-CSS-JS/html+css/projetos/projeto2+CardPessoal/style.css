@@ -1,0 +1,41 @@
+body{
+
+    background-image: url(/Imagens/backgorund.png);
+    background-repeat: no-repeat;
+    
+
+}
+
+ul{
+    list-style-type:none;
+    padding-left: 200px;
+    
+   
+}
+
+#insta{
+    list-style-image: url(/Imagens/Insta.png);
+}
+
+#twitter{
+    list-style-image: url(/Imagens/Twitter.png);
+
+}
+
+#youtuber {
+    list-style-image: url(/Imagens/Youtube.png);
+}
+
+li{
+    text-shadow: 1px 1px 3px;
+    
+}
+#nome{
+
+    font-size:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding-left: 200px;
+    padding-bottom: 75px;
+    text-decoration: overline underline;
+    text-shadow: 1px 1px 4px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local e time</title>
+</head>
+
+<script>
+    // function mudartexto(){
+    //     let h = document.getElementsByTagName("h1")[0];
+    //     h.innerHTML = "contator :";
+
+    //     setTimeout(mudarcor,1000);
+
+    //     setimeout serve pra dar um time de pra fazer determinada operação,
+    //     quando uma funcao é passada dentro de um parâmetro nao é preciso colocar os colchetes ()
+    //     setInterval(atualizartexto,1000);
+    // }
+
+    // function mudarcor(){
+    //     let h = document.getElementsByTagName("h1")[0];
+    //     h.style.color = "blue";
+    //     esse exemplo é pra ser usado juntamente com o settimeout
+
+    // }
+    var count = 0;
+    var interval;
+
+    function atualizartexto(){
+        let h = document.getElementsByTagName("h1")[0];
+        h.innerHTML += " "+ count;
+        count++;
+
+
+    }
+
+
+    function iniciar(){
+        interval = setInterval(atualizartexto,1000);
+    }
+
+    function parar(){
+        clearInterval(interval);
+        // tambem é existente o clearTimeout exemplo: se vc colocar um settimout de 3sengs 
+        // e por algum motivo quiser parar no meio da contagem, é possivel com o o clear
+    }
+
+
+</script>
+
+<body>
+    <h1>contador</h1>
+    <input onclick="iniciar()" type="button" value="iniciar">
+    <input onclick="parar()" type="button" value="parar">
+</body>
+</html>

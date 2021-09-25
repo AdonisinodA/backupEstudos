@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+
+
+    <script>
+
+        function novoAluno(nome,idade){
+            return {nome,idade}
+
+
+        }
+
+
+        let alunos = [
+            novoAluno("adonis",32),
+            novoAluno("josé", 23),
+            novoAluno("maria", 40),
+            novoAluno("fernando", 18),
+        ]
+
+
+        function temMaisDe30(x){
+            return x.idade > 30
+        }
+
+
+        function temMenosDe30(x){
+            return x.idade < 30
+        }
+
+        function multi(x){
+            return x.idade *2;
+        }
+        // let cont = 0 
+
+        // for (let x of alunos){
+        //     console.log(alunos[cont]);
+        //     cont += 1
+             
+        // }
+
+        // let a = alunos.map(temMaisDe30)
+        // console.log(a);
+
+        function mapa(callback){
+            let newList = []
+            for (x of alunos){
+                let y = callback(x)
+                newList.push(y)
+            }
+            return newList;
+        }
+        
+       console.log(mapa(temMaisDe30));
+        
+
+        
+
+
+        
+
+
+    </script>
+     
+
+
+
+
+
+
+
+
+</body>
+</html>

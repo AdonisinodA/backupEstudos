@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herença</title>
+</head>
+
+<script>
+    // onload serve para carrega primeiro o html e css e depois javascript
+    onload = function(){
+        let d1 = document.getElementById("d1");
+        console.log(d1.children[0]);  
+        // children serve para usar as criancas de um determinado elemento
+        // e com o parentelement é possivel pegar o pai do elemento
+        console.log(document.body.children[0].children[0]);
+    }
+    
+
+</script>
+
+
+<body>
+
+
+    <div id="d1">
+        <h1>titulo</h1>
+
+
+        <p>
+            qualquer texto
+        </p>
+    
+    </div>
+
+
+
+    <div id="d2">
+        <h1>titulo2</h1>
+
+
+    <p>
+        qualquer texto2
+    </p>
+    </div>
+
+
+    
+</body>
+</html>

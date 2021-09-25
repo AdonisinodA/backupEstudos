@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<script>
+
+// nesse exemplo aprenderemos a transforma um doc json em string e uma string em json
+
+
+let registration = {
+    name : "adonis mendes",
+    age : 22,
+    genre : "hétero"
+
+};
+
+let migration = JSON.stringify(registration);
+// para transformar um objeto json em   string usa-se o json.stringify
+console.log(migration);
+
+console.log("============================");
+// no exemplo acima, um json foi transformado em string
+// agora transformaremos uma string em json
+let registration1 = '{"name": "adonis mendes", "age": 23, "genre": "hétero"}';
+
+let migration1 = JSON.parse(registration1);
+// pra transformar uma string em json usa-se o json.parse
+
+console.log(migration1);
+
+
+
+</script>
+
+
+<body>
+    
+</body>
+</html>

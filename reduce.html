@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce</title>
+</head>
+<body>
+
+
+    <script>
+        function novoAluno(nome,idade){
+            return {nome,idade}
+
+
+        }
+
+
+        let alunos = [
+            novoAluno("adonis",32),
+            novoAluno("josé", 23),
+            novoAluno("maria", 40),
+            novoAluno("fernando", 18),
+        ]
+
+        function soma(total,aluno){
+            return total + aluno.idade;
+        }
+        
+
+
+        
+
+        function reduction(callback){
+            let newList = []
+            let guard2 = 0
+            for ( x in alunos){
+                let guard1 = callback(guard2,alunos[x])
+                guard2 = guard1                
+                
+               
+            }
+            newList.push(guard2)
+            return newList
+        }
+        
+        console.log(reduction(soma));
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

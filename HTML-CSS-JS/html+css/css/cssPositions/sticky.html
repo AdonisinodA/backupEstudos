@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static e relative</title>
+</head>
+
+
+
+<style>
+
+#container{
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    width: 800px;
+    height: 1800px;
+    
+}
+/*  ----sticky, os outros elementos respeitam o ponto inicial dele, diferente do fixed
+onde os outros elementos nao respeitam e ficam por trás do elemento fixed
+
+funcionamento semelhante a do fixed.
+
+*/
+#square1{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    position: sticky; 
+    top: 0px;
+    
+}
+
+
+#square2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(47, 0, 255);
+   
+
+
+    
+}
+
+#square3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(245, 0, 0);
+    
+}
+
+
+
+
+</style>
+<body>
+    <div id="container"> 
+        <div id="square1">quadrado 1</div>
+        <div id="square2">quadrado 2</div>
+        <div id="square3">quadrado 3</div>
+    </div>
+
+</body>
+</html>

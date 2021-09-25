@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste for in e for of</title>
+</head>
+
+
+<script>
+console.log('exemplo de um for sozinho');
+const a = ['adonis','jose','maria','benardo'];
+
+for (let cont in a){
+    // console.log(a[cont]);
+    console.log(cont);
+}
+console.log("=====================");
+for (let cont of a){
+    console.log(cont);
+
+
+}
+
+console.log('=========================');
+// o for in dentro de um objeto pegará a propriedade(chave) desse objeto
+// e dentro de uma array pegará o indice
+let aluno = {
+    nome : "adonis mendes",
+    idade : 22,
+    nota : 8.5,
+
+
+};
+
+
+for (let counter in aluno){
+    console.log(counter);
+}
+
+
+
+</script>
+
+
+<body>
+    
+
+
+
+</body>
+</html>

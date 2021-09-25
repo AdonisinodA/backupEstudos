@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+</head>
+
+
+
+<style>
+
+#container{
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    bottom: 0px;
+    /* esse é o container e ele é pai dos quadrados
+    se o elemento div é de padrao position static
+    se for static ele não é reconhecido pleo o position absolute e por isso ficará fora da
+    borda de determinada pelo o css, ele pode ser absolute ou relative */
+}
+
+#square1{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    
+}
+
+
+#square2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(47, 0, 255);
+    position: absolute;   /* o absolute ele reconhece a tela toda entao fazendo um teste com o bottom 0
+    o elemento vai para a posição 0 do elemento pai(container) que nao pode ficar no position static para ser reconhecido  */
+    bottom: 0px;
+    right: 0px;
+    
+    
+    
+}
+
+#square3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(245, 0, 0);
+    
+}
+
+
+
+
+</style>
+<body>
+    <div id="container"> 
+        <div id="square1">quadrado 1</div>
+        <div id="square2">quadrado 2</div>
+        <div id="square3">quadrado 3</div>
+    </div>
+
+</body>
+</html>

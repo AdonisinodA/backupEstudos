@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static e relative</title>
+</head>
+
+
+
+<style>
+
+#container{
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    width: 800px;
+    height: 800px;
+}
+
+#square1{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    
+}
+
+/* a propriedade static é a propriedade padrao nao altera nada  */
+#square2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(47, 0, 255);
+    position: relative; 
+    /* o position relative ele serve para você mexer no elemento sem interferir nos outros,
+    a referencia de ponto dele sempre será onde o  elemento estava de orige*/
+    top: 400px;
+    left: 600px;
+    
+}
+
+#square3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(245, 0, 0);
+    
+}
+
+
+
+
+</style>
+<body>
+    <div id="container"> 
+        <div id="square1">quadrado 1</div>
+        <div id="square2">quadrado 2</div>
+        <div id="square3">quadrado 3</div>
+    </div>
+
+</body>
+</html>

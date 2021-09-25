@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed</title>
+</head>
+
+
+
+<style>
+
+#container{
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    width: 800px;
+    height: 1800px;
+}
+
+#square1{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    
+}
+
+
+#square2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(47, 0, 255);
+    position: fixed;
+    top: 0px;
+    left: 400px;
+    /* ---------position fixed fixa em determinada localicadade e se caso vc role a pagina o elemento continuará  no mesmo lugar. */
+
+    /* position fixed ele funciona parecidamente com obsolute no 
+    aspecto de os restante dos elementos ignorar a posição inicial dele.
+    porém, ele so funciona levando em consideração o vierport(a pagina toda), 
+    entao nao conseguimos destinar um elemento pai a ele, a tela do computador ja é o elemento pai */
+    
+}
+
+#square3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(245, 0, 0);
+    
+}
+
+
+
+
+</style>
+<body>
+    <div id="container"> 
+        <div id="square1">quadrado 1</div>
+        <div id="square2">quadrado 2</div>
+        <div id="square3">quadrado 3</div>
+    </div>
+
+</body>
+</html>
